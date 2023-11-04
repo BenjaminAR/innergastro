@@ -141,23 +141,26 @@ h2{
         animation: movimiento 40s linear infinite alternate;
     }
     .item{
+        
         height: 25vh;
         width: 15rem;
     }
     .item:nth-child(3){
+        display: none;
         left: 32%;
         top: 73%;
     }
 
     .item:nth-child(4){
+        display: none;
         left: calc(50% + 110px);
         top: 73%;
     }
 
     .item .content {
         width: 35rem;
-        top: 30%;
-        left: 10%;
+        top: 37%;
+        left: 8%;
     }
     .item .name {
         font-size: 3.5rem;
