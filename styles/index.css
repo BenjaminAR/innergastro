@@ -176,8 +176,6 @@ html {
     animation: movimiento 10s linear infinite alternate;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    
-
 }
 
 
@@ -361,6 +359,7 @@ html {
     margin-top: 11rem;
 }
 
+
 .services-slider {
     z-index: 3;
     display: flex;
@@ -368,7 +367,6 @@ html {
     align-items: center;
     margin-top: 8rem;
     gap: 4.5rem;
-
 }
 
 .services-one,
@@ -415,7 +413,8 @@ html {
 
 }
 
-.btn-slider{
+.btn-slider {
+    z-index: 3;
     height: 100%;
     width: 100%;
     display: flex;
@@ -423,7 +422,12 @@ html {
     align-items: center;
 }
 
-.btn-slider a img{
+.btn-slider button {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-slider img {
     width: 2rem;
     height: 2rem;
     margin: 0 1rem;
@@ -434,7 +438,7 @@ html {
 }
 
 @media (min-width: 768px) {
-    .btn-slider{
+    .btn-slider {
         display: none;
     }
 }
@@ -511,27 +515,32 @@ html {
         width: 100%;
         min-height: 80vh;
         text-align: center;
-        transition: transform 0.5s; /* Agregamos una transición para suavizar la animación */
+        transition: transform 0.5s;
+        /* Agregamos una transición para suavizar la animación */
     }
 
 }
 
 @media (max-width: 1130px) {
 
+    .services-slider {
+        z-index: 3;
+        display: flex;
+        overflow: hidden;
+        max-width: 100%;
+        position: relative;
+        margin: 0 auto; 
+        text-align: center;
+        transition: transform 0.5s ease;
+    }
+    
+    
+
     .serservices-slider-controls {
         display: flex;
     }
 
-    .services-slider {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        width: 100%;
-        min-height: 80vh;
-        margin-top: -1rem;
-        text-align: center;
-    }
+
 
     .services-one,
     .services-two {
