@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../fonts/GlacialIndifference-Bold.otf') format('otf'),
+        url('../fonts/GlacialIndifference-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Glacial Indifference', sans-serif;
 }
 
 html {
@@ -168,6 +176,7 @@ html {
     animation: movimiento 10s linear infinite alternate;
     scroll-snap-align: center;
     scroll-snap-stop: always;
+    
 
 }
 
@@ -206,16 +215,16 @@ html {
 
 .hero-title h1 {
     font-weight: normal;
-    font-size: 3.7rem;
+    font-size: 4rem;
     color: var(--parrafo);
     font-weight: normal;
     line-height: 1.2;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .hero-title h1 span {
     color: var(--primario);
-    font-size: 4rem;
+    font-size: 4.2rem;
     font-weight: bold;
 }
 
@@ -236,7 +245,7 @@ html {
     border-radius: 5px;
     padding: 1rem 2rem;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -247,7 +256,7 @@ html {
     border-radius: 5px;
     padding: 1rem 2rem;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -260,7 +269,6 @@ html {
 .hero-btn__second a {
     color: #000000;
     text-decoration: none;
-    font-weight: bold;
     z-index: 3;
 }
 
@@ -308,7 +316,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 20% 70% 10%;
     background-image: url("../images/backgrounds/Penendoscopia.png");
     background-size: cover;
     animation: movimiento 10s linear infinite alternate;
@@ -346,75 +354,193 @@ html {
     }
 }
 
-.products-btn {
-    width: 100%;
+.services-title {
+    z-index: 3;
+    font-size: 2.5rem;
+    color: var(--primario);
+    margin-top: 11rem;
+}
+
+.services-slider {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 4.5rem;
+
+}
+
+.services-one,
+.services-two {
+    background-color: #ffffffab;
+    width: 18%;
+    height: 45vh;
+    padding: 2rem;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
+    -moz-box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
+}
+
+.services-one img,
+.services-two img {
+    margin-top: -7rem;
+    width: 12rem;
+}
+
+.services-one h2,
+.services-two h2 {
+    font-size: 2.5rem;
+    color: var(--parrafoObs);
+}
+
+.services-one p,
+.services-two p {
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--parrafoObs);
+    margin-bottom: 2rem;
+    line-height: 2.2rem;
+}
+
+.services-a {
+    font-size: 1.8rem;
+    color: var(--parrafoObs);
+
+}
+
+.btn-slider{
+    height: 100%;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.products-btn__first {
-    background-color: rgba(34, 34, 34, 0.8);
-    backdrop-filter: blur(8px);
-    width: 80%;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    text-align: center;
-    font-size: 1.8rem;
-    text-decoration: none;
-}
-
-.products-btn__second {
-    background-color: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(8px);
-    width: 80%;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    text-align: center;
-    font-size: 1.8rem;
-    text-decoration: none;
-}
-
-.products-btn__first a {
-    color: white;
-    text-decoration: none;
-}
-
-.products-btn__second a {
-    color: #000000;
-    text-decoration: none;
+.btn-slider a img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+    margin-top: -5rem;
+    background-color: #ffffffab;
+    padding: 20px;
+    border-radius: 50%;
 }
 
 @media (min-width: 768px) {
+    .btn-slider{
+        display: none;
+    }
+}
 
-    .products-btn {
-        flex-direction: row;
-        gap: 3rem;
+@keyframes borderAnimation {
+    0% {
+        border-color: var(--primario);
+        /* Color inicial del borde */
     }
 
-    .products-btn__first {
-        background-color: rgba(34, 34, 34, 0.8);
-        backdrop-filter: blur(8px);
-        width: 20%;
-        border-radius: 5px;
-        padding: 1rem 2rem;
+    50% {
+        border-color: white;
+        /* Color a la mitad de la animación */
+    }
+
+    100% {
+        border-color: var(--primario);
+        /* Color final del borde (vuelve al color original) */
+    }
+}
+
+.services-one a:hover,
+.services-two a:hover {
+    animation: borderAnimation 2s infinite;
+    /* Aplica la animación al borde */
+}
+
+
+.services-a__btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+    z-index: 3;
+    letter-spacing: 1px;
+    background-color: rgba(34, 34, 34, 0.8);
+    width: 80%;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 3px solid transparent;
+    /* Color inicial del borde */
+    animation: none
+}
+
+
+@media (max-width: 760px) {
+    .services-title {
+        margin-top: 9rem;
+        font-size: 2.2rem;
+        font-weight: normal !important;
+    }
+
+    .serservices-slider-controls {
+        display: flex;
+    }
+
+    .services-one,
+    .services-two {
+        width: 80%;
+        /* Ocuparán el 100% del ancho en dispositivos móviles */
+    }
+
+    .services-two {
+        display: none;
+    }
+
+    .services-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        min-height: 80vh;
         text-align: center;
-        font-size: 1.8rem;
-        text-decoration: none;
+        transition: transform 0.5s; /* Agregamos una transición para suavizar la animación */
     }
 
-    .products-btn__second {
-        background-color: rgba(255, 255, 255, 0.65);
-        backdrop-filter: blur(8px);
-        width: 20%;
-        border-radius: 5px;
-        padding: 1rem 2rem;
-        text-align: center;
-        font-size: 1.8rem;
-        text-decoration: none;
+}
+
+@media (max-width: 1130px) {
+
+    .serservices-slider-controls {
+        display: flex;
     }
+
+    .services-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        min-height: 80vh;
+        margin-top: -1rem;
+        text-align: center;
+    }
+
+    .services-one,
+    .services-two {
+        width: 75%;
+        margin: 0 3rem;
+        /* Ocuparán el 100% del ancho en dispositivos móviles */
+    }
+
+
 }
 
 /** END SERVICE **/

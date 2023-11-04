@@ -7,12 +7,7 @@
     <meta name="description" content="Clínica especializada en estudios de endoscopia gástrica con profesionales médicos altamente capacitados. 
         Ofrecemos diagnóstico y tratamiento de enfermedades gastrointestinales. 
         ¡Contáctanos hoy para cuidar tu salud gástrica!" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
-        rel="stylesheet">
+    <link rel="shortcut icon" href="images/logos/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
@@ -53,7 +48,7 @@
         <div class="hero-btn">
 
             <div class="hero-btn__first">
-                <a href=""><span style="font-weight: bold;">Doctores</span></a>
+                <a href="index.html#_rent">Doctores</span></a>
 
             </div>
             <div class="hero-btn__second">
@@ -65,13 +60,69 @@
 
     <section class="services" id="_services">
 
-        <div class="services">
-            <h2 style="text-align: center;">
-                Estudios
+        <div class="services-title">
+            <h2 style="text-align: center; font-weight: normal;">
+                Procedimientos Endoscópicos
             </h2>
         </div>
 
+        <div class="services-slider">
+            <div class="services-one">
+                <img src="images/Iconos/Estomago.png" alt="Imagen de estómago">
+                <h2>Penendoscopía.</h2>
+                <a class="services-a" href="#">Ver más</a>
+                <p>Procedimiento para diagnosticar y tratar enfermedades del esófago, estómago y el comienzo del
+                    intestino delgado.</p>
+                <a class="services-a__btn" href="#">Agendar cita</a>
+            </div>
+            <div class="services-two">
+                <img src="images/Iconos/Intestino.png" alt="Imagen de intestino">
+                <h2>Colonoscopía.</h2>
+                <a class="services-a" href="#">Ver más</a>
+                <p>Procedimiento esencial para la detección temprana de alteraciones en el intestino grueso y el recto.
+                </p>
+                <a class="services-a__btn" href="#">Agendar cita</a>
+            </div>
+        </div>
+
+        <div class="btn-slider">
+            <a href="#" id="showServicesOne">
+                <img src="images/Iconos/chevron-left-solid.svg" alt="Anterior">
+            </a>
+            <a href="#" id="showServicesTwo">
+                <img src="images/Iconos/chevron-right-solid.svg" alt="Siguiente">
+            </a>
+        </div>
+
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.querySelector('.services-slider');
+            const servicesOne = document.querySelector('.services-one');
+            const servicesTwo = document.querySelector('.services-two');
+
+            const showServicesOneBtn = document.getElementById('showServicesOne');
+            const showServicesTwoBtn = document.getElementById('showServicesTwo');
+
+            // Manejador para mostrar el servicio 1
+            showServicesOneBtn.addEventListener('click', function () {
+                slider.style.transform = 'translateX(0%)';
+                servicesOne.style.display = 'flex';
+                servicesTwo.style.display = 'none';
+            });
+
+            // Manejador para mostrar el servicio 2
+            showServicesTwoBtn.addEventListener('click', function () {
+                slider.style.transform = 'translateX(-100%)';
+                servicesOne.style.display = 'none';
+                servicesTwo.style.display = 'flex';
+            });
+        });
+
+    </script>
+
+
 
 </body>
 
