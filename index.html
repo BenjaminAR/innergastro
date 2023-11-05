@@ -8,8 +8,10 @@
         Ofrecemos diagnóstico y tratamiento de enfermedades gastrointestinales. 
         ¡Contáctanos hoy para cuidar tu salud gástrica!" />
     <link rel="shortcut icon" href="images/logos/icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xkc6ghn.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="stylesCarrousel/styles.css">
@@ -17,10 +19,9 @@
 </head>
 
 <body>
-    <div class="menu">
-        <div class="logo"> <img src="images/logos/ENNERGASTRO.png" alt="logo"> </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <div class="menu-line">
+        <div class="logo"> <img src="images/logos/InnerGastroLogo.png" alt="logo"> </div>
         <ul class="menu-list">
             <li><a href="#">Inicio</a></li>
             <li class="submenu">
@@ -38,39 +39,57 @@
         </ul>
     </div>
 
+    <div class="screen">
+        <div class="logo-rd"> <img src="images/logos/InnerGastroLogo.png" alt="logo"> </div>
+        <div class="navbar"></div>
+        <div class="circle"></div>
+        <div class="menu">
+
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Servicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="x"></div>
+            <div class="y"></div>
+            <div class="z"></div>
+        </div>
+
+    </div>
+
+    <div class="menu-space"></div>
+
     <section class="hero">
         <div class="hero-title">
-            <h1 style="text-align: center;">
-                Clínica de <br>
-                <span>ENDOSCOPÍA DIGESTIVA</span>
+            <h1 class="hero-title__h1">
+                Unidad de <br> <span>Endoscopía Digestiva</span>
             </h1>
-
         </div>
         <div class="hero-btn">
 
-            <div class="hero-btn__first">
-                <a href="index.html#_rentas">Doctores</span></a>
+            <a class="hero-btn__first" href="index.html#_rentas">Médicos</span></a>
 
-            </div>
-            <div class="hero-btn__second">
-                <a href="index.html#_services"><span>Pacientes</span></a>
-            </div>
+            <a class="hero-btn__second" href="index.html#_services">Pacientes</a>
 
         </div>
     </section>
 
-    <section class="services" id="_services">
+    <section style="display: none;" class="services" id="_services">
 
         <div class="services-title">
-            <h2 style="text-align: center; font-weight: normal;">
-                Procedimientos Endoscópicos
+            <h2>
+                Procedimientos
             </h2>
         </div>
 
         <div class="services-slider">
             <div class="services-one">
                 <img src="images/Iconos/Estomago.png" alt="Imagen de estómago">
-                <h2>Penendoscopía.</h2>
+                <h3>Panendoscopía.</h3>
                 <a class="services-a" href="#">Ver más</a>
                 <p>Procedimiento para diagnosticar y tratar enfermedades del esófago, estómago y el comienzo del
                     intestino delgado.</p>
@@ -78,7 +97,7 @@
             </div>
             <div class="services-two">
                 <img src="images/Iconos/Intestino.png" alt="Imagen de intestino">
-                <h2>Colonoscopía.</h2>
+                <h3>Colonoscopía.</h3>
                 <a class="services-a" href="#">Ver más</a>
                 <p>Procedimiento esencial para la detección temprana de alteraciones en el intestino grueso y el recto.
                 </p>
@@ -102,62 +121,96 @@
             <div class="item" style="background-image: url(images/backgrounds/fondo1.jpg);">
                 <div class="content">
                     <div class="name">
-                        <h2>Operaciones con la Máxima Higiene</h2>
+                        <h3>Salas de Endoscopia de Primera Clase</h3>
                     </div>
-                    <div class="des">En nuestra clínica de endoscopia, la higiene es una prioridad absoluta en cada
-                        procedimiento que realizamos. Nos enorgullece ofrecer un entorno estéril y seguro, asegurando
-                        que nuestros pacientes reciban atención médica de la más alta calidad.</div>
+                    <div class="des">
+                        <p>
+                        En InnerGastro, nos enorgullece ofrecer salas de endoscopia de
+                        primera clase que cumplen con los más altos estándares de calidad y seguridad. Nuestras
+                        instalaciones están diseñadas pensando en el bienestar de nuestros pacientes y en la eficacia de
+                        los procedimientos médicos.
+                        </p>
+                    </div>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="item" style="background-image: url(images/backgrounds/Clinica.png);">
                 <div class="content">
                     <div class="name">
-                        <h2>Salas de Endoscopia de Primera Clase</h2>
+                        <h3>Salas de Endoscopia de Primera Clase</h3>
                     </div>
-                    <div class="des">En nuestra clínica de endoscopia, nos enorgullece ofrecer salas de endoscopia de
+                    <div class="des">
+                        <p>
+                        En InnerGastro, nos enorgullece ofrecer salas de endoscopia de
                         primera clase que cumplen con los más altos estándares de calidad y seguridad. Nuestras
                         instalaciones están diseñadas pensando en el bienestar de nuestros pacientes y en la eficacia de
-                        los procedimientos médicos.</div>
+                        los procedimientos médicos.
+                        </p>
+                    </div>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="item" style="background-image: url(images/backgrounds/CliniacaEndoscopia2.png);">
                 <div class="content">
                     <div class="name">
-                        <h2>Titulo</h2>
+                        <h3>Salas de Endoscopia de Primera Clase</h3>
                     </div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <div class="des">
+                        <p>
+                        En InnerGastro, nos enorgullece ofrecer salas de endoscopia de
+                        primera clase que cumplen con los más altos estándares de calidad y seguridad. Nuestras
+                        instalaciones están diseñadas pensando en el bienestar de nuestros pacientes y en la eficacia de
+                        los procedimientos médicos.
+                        </p>
+                    </div>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="item" style="background-image: url(images/backgrounds/Penendoscopia.png);">
                 <div class="content">
                     <div class="name">
-                        <h2>Calidad en Materiales de Endoscopia</h2>
+                        <h3>Salas de Endoscopia de Primera Clase</h3>
                     </div>
-                    <div class="des">En nuestra clínica de endoscopia, ofrecemos a los médicos la posibilidad de
-                        utilizar materiales de endoscopia de la más alta calidad para sus procedimientos. Sabemos que la
-                        elección de los materiales es fundamental para lograr resultados óptimos y brindar la mejor
-                        atención a sus pacientes.</div>
+                    <div class="des">
+                        <p>
+                        En InnerGastro, nos enorgullece ofrecer salas de endoscopia de
+                        primera clase que cumplen con los más altos estándares de calidad y seguridad. Nuestras
+                        instalaciones están diseñadas pensando en el bienestar de nuestros pacientes y en la eficacia de
+                        los procedimientos médicos.
+                        </p>
+                    </div>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="item" style="background-image: url(images/backgrounds/CliniacaEndoscopia2.png);">
                 <div class="content">
                     <div class="name">
-                        <h2>Titulo</h2>
+                        <h3>Salas de Endoscopia de Primera Clase</h3>
                     </div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <div class="des">
+                        <p>
+                        En InnerGastro, nos enorgullece ofrecer salas de endoscopia de
+                        primera clase que cumplen con los más altos estándares de calidad y seguridad. Nuestras
+                        instalaciones están diseñadas pensando en el bienestar de nuestros pacientes y en la eficacia de
+                        los procedimientos médicos.
+                        </p>
+                    </div>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="item" style="background-image: url(images/backgrounds/Penendoscopia.png);">
                 <div class="content">
                     <div class="name">
-                        <h2>Titulo</h2>
+                        <h3>Salas de Endoscopia de Primera Clase</h3>
                     </div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <div class="des">
+                        <p>
+                        En InnerGastro, nos enorgullece ofrecer salas de endoscopia de
+                        primera clase que cumplen con los más altos estándares de calidad y seguridad. Nuestras
+                        instalaciones están diseñadas pensando en el bienestar de nuestros pacientes y en la eficacia de
+                        los procedimientos médicos.
+                        </p>
+                    </div>
                     <button>Reservar</button>
                 </div>
             </div>
@@ -167,6 +220,8 @@
             <button id="next"><i class="fa-solid fa-angle-right"></i></button>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
 
     <script>
 
@@ -180,7 +235,6 @@
         }
 
     </script>
-
 </body>
 
 </html>
