@@ -3,7 +3,7 @@
   --secundario: #629941;
   --blanco: #f4f4f4;
   --negro: #000;
-  --backObscuro: #4c4d4f;
+  --backObscuro: #242525;
   --parrafo: #ebebeb;
   --backObsTrans: rgba(34, 34, 34, 0.8);
   --backClaTrans: rgba(255, 255, 255, 0.65);
@@ -15,33 +15,33 @@ html {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 3.1em;
+    font-size: 3.1rem;
   }
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 400;
 }
 
 @media (max-width: 480px) {
   h2 {
-    font-size: 3.3em;
+    font-size: 2.5rem;
   }
 }
 
 h3 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 
 @media (max-width: 480px) {
   h3 {
-    font-size: 2.3em;
+    font-size: 2rem;
   }
 }
