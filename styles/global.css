@@ -1,47 +1,47 @@
 :root {
-    --primario: #41B7B7;
-    --secundario: #629941;
-    --blanco: #f4f4f4;
-    --negro: #000;
-    --backObscuro: #332F21;
-    --parrafo: #EBEBEB;
-    --backObsTrans: rgba(34, 34, 34, 0.8);
-    --backClaTrans: rgba(255, 255, 255, 0.65);
+  --primario: #41b7b7;
+  --secundario: #629941;
+  --blanco: #f4f4f4;
+  --negro: #000;
+  --backObscuro: #4c4d4f;
+  --parrafo: #ebebeb;
+  --backObsTrans: rgba(34, 34, 34, 0.8);
+  --backClaTrans: rgba(255, 255, 255, 0.65);
 }
 
-html{
-    box-sizing: border-box;
-    font-size: 16px;
+html {
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-h1{
-    font-size: 4em;
-}
-
-@media (max-width: 480px) {
-    h1{
-        font-size: 3.1em;
-    }
-}
-
-h2{
-    font-size: 3em;
-    font-weight: 400;
+h1 {
+  font-size: 4em;
 }
 
 @media (max-width: 480px) {
-    h2{
-        font-size: 3.3em;
-    }
+  h1 {
+    font-size: 3.1em;
+  }
 }
 
-h3{
-    font-size: 2.2em;
-    font-weight: 400;
+h2 {
+  font-size: 3em;
+  font-weight: 400;
 }
 
 @media (max-width: 480px) {
-    h3{
-        font-size: 2.3em;
-    }
+  h2 {
+    font-size: 3.3em;
+  }
+}
+
+h3 {
+  font-size: 2.2em;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 2.3em;
+  }
 }
