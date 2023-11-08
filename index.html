@@ -30,7 +30,9 @@
   <body>
     <div class="menu-line">
       <div class="logo">
-        <img src="images/logos/LogoLargeObs.png" alt="logo" />
+        <a href="#">
+          <img src="images/logos/LogoLargeObs.png" alt="logo" />
+        </a>
       </div>
       <ul class="menu-list">
         <li><a href="#">Inicio</a></li>
@@ -53,7 +55,9 @@
 
     <div class="screen">
       <div class="logo-rd">
-        <img src="images/logos/LogoLargeObs.png" alt="logo" />
+        <a href="">
+          <img src="images/logos/LogoLargeObs.png" alt="logo" />
+        </a>
       </div>
       <div class="navbar"></div>
       <div class="circle"></div>
@@ -95,26 +99,30 @@
       </div>
 
       <div class="services-slider">
-        <div class="services-one">
+        <div class="services-one" id="services-one">
           <img src="images/Iconos/Estomago.png" alt="Imagen de estómago" />
           <div>
             <h3>Panendoscopía.</h3>
-            <a class="services-a" href="#">Ver más</a>
+            <a class="services-a" href="serviciosPacientes/panendoscopia.html">Ver más</a>
             <p>
-              Procedimiento para diagnosticar y tratar enfermedades del esófago,
-              estómago y el comienzo del intestino delgado.
+              Procedimiento fundamental para el diagnóstico y tratamiento de
+              afecciones que afectan al esófago, estómago y la entrada del
+              intestino delgado. Te ofrecemos servicios de endoscopia de
+              vanguardia para el cuidado de tu salud gastrointestinal.
             </p>
           </div>
           <a class="services-a__btn" href="#">Agendar cita</a>
         </div>
-        <div class="services-two">
+        <div class="services-two" id="services-two">
           <img src="images/Iconos/colon.png" alt="Imagen de intestino" />
           <div>
             <h3>Colonoscopía.</h3>
             <a class="services-a" href="#">Ver más</a>
             <p>
-              Procedimiento esencial para la detección temprana de alteraciones
-              en el intestino grueso y el recto.
+              Procedimiento fundamental para la detección temprana de afecciones
+              en el intestino grueso y el recto. Te ofrecemos servicios de
+              colonoscopia de última generación para el cuidado de tu salud
+              intestinal.
             </p>
           </div>
           <a class="services-a__btn" href="#">Agendar cita</a>
@@ -122,8 +130,12 @@
       </div>
 
       <div class="btn-slider">
-        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
-        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="services-prev">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button id="services-next">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
       </div>
     </section>
 
@@ -261,5 +273,7 @@
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/rentas.js"></script>
+    <script src="js/sliderServices.js"></script>
   </body>
 </html>
