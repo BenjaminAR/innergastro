@@ -45,3 +45,13 @@ h3 {
     font-size: 2rem;
   }
 }
+
+.animate-on-scroll{
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.animate-on-scroll.active {
+  opacity: 1;
+;
+}

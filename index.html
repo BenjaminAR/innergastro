@@ -19,28 +19,24 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
     <link rel="stylesheet" href="stylesCarrousel/styles.css" />
     <title>InnerGastro</title>
   </head>
 
   <body>
-    <div class="menu-line">
+    <div class="menu-line animate-on-scroll">
       <div class="logo">
         <a href="#">
           <img src="images/logos/LogoLargeObs.png" alt="logo" />
         </a>
       </div>
-      <ul class="menu-list">
+      <ul class="menu-list ">
         <li><a href="#">Inicio</a></li>
         <li class="submenu">
           <a href="#"
             >Servicios &nbsp;<span><i class="fa-solid fa-angle-down"></i></span
           ></a>
-          <div class="sub-menu">
+          <div class="sub-menu ">
             <ul>
               <li><a href="#">Estudios</a></li>
               <li><a href="#">Renta de instalaciones</a></li>
@@ -54,7 +50,7 @@
     </div>
 
     <div class="screen">
-      <div class="logo-rd">
+      <div class="logo-rd ">
         <a href="">
           <img src="images/logos/LogoLargeObs.png" alt="logo" />
         </a>
@@ -76,32 +72,29 @@
         <div class="z"></div>
       </div>
     </div>
-
-    <div class="menu-space"></div>
-
     <section class="hero">
       <div class="hero-title">
-        <h1 class="hero-title__h1">
+        <h1 class="hero-title__h1 animate-on-scroll">
           Unidad de <br />
           <span>Endoscopía Digestiva</span>
         </h1>
       </div>
       <div class="hero-btn">
-        <a class="hero-btn__first" href="index.html#_rentas">Médicos</a>
+        <a class="hero-btn__first animate-on-scroll" href="index.html#_rentas">Médicos</a>
 
-        <a class="hero-btn__second" href="index.html#_services">Pacientes</a>
+        <a class="hero-btn__second animate-on-scroll" href="index.html#_services">Pacientes</a>
       </div>
     </section>
 
     <section class="services" id="_services">
-      <div class="services-title">
+      <div class="services-title animate-on-scroll">
         <h2>Procedimientos</h2>
       </div>
 
       <div class="services-slider">
-        <div class="services-one" id="services-one">
+        <div class="services-one animate-on-scroll" id="services-one">
           <img src="images/Iconos/Estomago.png" alt="Imagen de estómago" />
-          <div>
+          <div class="">
             <h3>Panendoscopía.</h3>
             <a class="services-a" href="serviciosPacientes/panendoscopia.html">Ver más</a>
             <p>
@@ -113,7 +106,7 @@
           </div>
           <a class="services-a__btn" href="#">Agendar cita</a>
         </div>
-        <div class="services-two" id="services-two">
+        <div class="services-two animate-on-scroll" id="services-two">
           <img src="images/Iconos/colon.png" alt="Imagen de intestino" />
           <div>
             <h3>Colonoscopía.</h3>
@@ -142,7 +135,7 @@
     <section class="container" id="_rentas">
       <div id="slide">
         <div
-          class="item"
+          class="item animate-on-scroll"
           style="background-image: url(images/backgrounds/fondo1.jpg)"
         >
           <div class="content">
@@ -226,7 +219,7 @@
         <div
           class="item"
           style="
-            background-image: url(images/backgrounds/CliniacaEndoscopia2.png);
+            background-image: url(images/backgrounds/ClinicaInstalaciones.png);
           "
         >
           <div class="content">
@@ -272,6 +265,7 @@
       </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/rentas.js"></script>
     <script src="js/sliderServices.js"></script>
