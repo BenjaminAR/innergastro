@@ -11,8 +11,8 @@ document.addEventListener("scroll", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   var titulo = document.querySelector(".contenido-parallax-titulo");
-  var saludo = 'Hola munod';
   var miDiv = document.querySelector(".menu-line");
+  var miDivMenuDos = document.querySelector(".screen");
 
   window.addEventListener("scroll", function () {
     var scrollPosition = window.scrollY;
@@ -26,12 +26,40 @@ document.addEventListener("DOMContentLoaded", function () {
     // Aplica la opacidad al elemento h2
     titulo.style.opacity = opacity;
 
-    if (scrollPosition >+ 350) {
-      miDiv.style.backgroundColor = "#242525"; /* Cambia el color de fondo a rojo */
-      console.log(scrollPosition)
+    if (scrollPosition > +350) {
+      miDiv.style.backgroundColor =
+        "rgb(66, 69, 69)"; /* Cambia el color de fondo a rojo */
     } else {
-      miDiv.style.backgroundColor = "transparent"; /* Restaura el color de fondo original a azul */
-        console.log('Restaura color')
+      miDiv.style.backgroundColor =
+        "transparent"; /* Restaura el color de fondo original a azul */
+    }
+
+    if (scrollPosition > +350) {
+      miDivMenuDos.style.backgroundColor =
+        "rgb(66, 69, 69)"; /* Cambia el color de fondo a rojo */
+    } else {
+      miDivMenuDos.style.backgroundColor =
+        "transparent"; /* Restaura el color de fondo original a azul */
     }
   });
 });
+
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+}
+
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+  var modals = document.getElementsByClassName("modal");
+  for (var i = 0; i < modals.length; i++) {
+    var modal = modals[i];
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+};

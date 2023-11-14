@@ -48,7 +48,7 @@
 
     <div class="screen">
       <div class="logo-rd">
-        <a href="">
+        <a href="/">
           <img src="images/logos/LogoLargeCla.png" alt="logo" />
         </a>
       </div>
@@ -130,42 +130,155 @@
     <div class="contenido-servicios">
       <h3>¿Qué debo esperar?</h3>
       <p style="margin-bottom: 0">Durante el estudio:</p>
-      <ul style="margin-top: 2px;">
-        <li>Duración de 30 minutos.</li>
+      <ul style="margin-top: 2px">
+        <li>Duración de X minutos.</li>
         <li>Se administrarán sedantes leves para tolerar el estudio.</li>
       </ul>
-      <p style="margin-bottom: 0; margin-top: 2px;">Posterior al procedimiento:</p>
-      <ul style="margin-top: 2px;">
-        <li>Una hora para recuperarse de la sedación.</li>
-        <li>Necesitarás que alguien te lleve a tu casa. No manejes ni retomes el trabajo por el resto del día.</li>
+      <p style="margin-bottom: 0; margin-top: 2px">
+        Posterior al procedimiento:
+      </p>
+      <ul style="margin-top: 2px">
+        <li>X hora para recuperarse de la sedación.</li>
+        <li>
+          Necesitarás que alguien te lleve a tu casa. No manejes ni retomes el
+          trabajo por el resto del día.
+        </li>
         <li>Te puedes sentir mareado o cansado hasta 24 hrs</li>
         <li>Puedes sentir dolor de garganta, inflamado o con gases.</li>
-        <li>En caso de fiebre, sangrado y/o dolor intenso debes contactar a tu médico.</li>
-        <li>Se te entregará un reporte por escrito, imágenes y video del estudio.</li>
-        <li>Si se tomaron biopsias el resultado tarda 7 días aproximadamente.</li>
+        <li>
+          En caso de fiebre, sangrado y/o dolor intenso debes contactar a tu
+          médico.
+        </li>
+        <li>Se te entregará...</li>
+        <li>Si se tomaron biopsias el resultado tarda...</li>
       </ul>
     </div>
-    
+    <div class="container-gallery">
+      <h3>Diagnosticos de la más alta calidad.</h3>
+      <div class="gallery">
+        <div class="image" onclick="openModal('modal01')">
+          <img src="images/galery/g1.png" alt="Imagen 1" />
+        </div>
+        <div class="image" onclick="openModal('modal02')">
+          <img src="images/galery/g2.png" alt="Imagen 1" />
+        </div>
+        <div class="image" onclick="openModal('modal03')">
+          <img src="images/galery/g3.png" alt="Imagen 1" />
+        </div>
+        <div class="image" onclick="openModal('modal04')">
+          <img src="images/galery/g4.png" alt="Imagen 1" />
+        </div>
+        <div class="image" onclick="openModal('modal05')">
+          <img src="images/galery/g5.png" alt="Imagen 1" />
+        </div>
+      </div>
 
-    <div class="contenido">
-      <h2>XXXXXXXXXXXXXX</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nihil
-        accusamus temporibus maiores adipisci earum fugit provident corrupti
-        quam voluptas ipsa aperiam, dignissimos voluptatibus, porro eos.
-        Provident quidem quas perferendis eos obcaecati, corporis blanditiis
-        quae labore dolore sunt ullam voluptates qui totam pariatur facilis
-        voluptatum. Ullam in nesciunt natus, sequi sed facere, adipisci
-        architecto aut quibusdam, laborum dolorem repellendus molestias quod. Id
-        libero veniam cupiditate fugiat laudantium sed qui nam facere vitae
-        soluta quaerat quas maxime, excepturi aperiam atque cumque voluptatum!
-        Iusto ea architecto illo ducimus quasi veniam provident ipsam ullam,
-        repudiandae neque facere impedit similique maxime at deserunt, corrupti
-        quae quibusdam eos? Iusto consectetur blanditiis pariatur, quia
-        assumenda eos quisquam fugiat dolorum possimus asperiores dolor qui
-        modi. Nemo soluta beatae delectus iure?
-      </p>
+      <div id="modal01" class="modal" onclick="closeModal('modal01')">
+        <span class="close" onclick="closeModal('modal01')">&times;</span>
+        <img
+          class="modal-content"
+          src="images/galery/g1.png"
+          alt="Imagen 1 en modal"
+        />
+      </div>
+      <div id="modal02" class="modal" onclick="closeModal('modal02')">
+        <span class="close" onclick="closeModal('modal01')">&times;</span>
+        <img
+          class="modal-content"
+          src="images/galery/g2.png"
+          alt="Imagen 1 en modal"
+        />
+      </div>
+      <div id="modal03" class="modal" onclick="closeModal('modal03')">
+        <span class="close" onclick="closeModal('modal01')">&times;</span>
+        <img
+          class="modal-content"
+          src="images/galery/g3.png"
+          alt="Imagen 1 en modal"
+        />
+      </div>
+      <div id="modal04" class="modal" onclick="closeModal('modal04')">
+        <span class="close" onclick="closeModal('modal01')">&times;</span>
+        <img
+          class="modal-content"
+          src="images/galery/g4.png"
+          alt="Imagen 1 en modal"
+        />
+      </div>
+      <div id="modal05" class="modal" onclick="closeModal('modal05')">
+        <span class="close" onclick="closeModal('modal01')">&times;</span>
+        <img
+          class="modal-content"
+          src="images/galery/g5.png"
+          alt="Imagen 1 en modal"
+        />
+      </div>
     </div>
+
+    <div class="container-contact-services">
+      <form
+        class="container-contact-services-form_"
+        action="enviar.php"
+        method="post"
+      >
+        <h3 style="margin: 0; margin-bottom: 1.6rem">Contactanos</h3>
+        <label for="name">Nombre: </label>
+        <input
+          class="w-100"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="¿Cuál es su nombre?"
+          required=""
+        />
+        <br />
+        <br />
+        <label style="margin-top: 5px" for="email">Email: </label>
+        <input
+          class="w-100"
+          type="email"
+          name="email"
+          id="name"
+          placeholder="¿Cuál es su nombre?"
+          required=""
+        />
+        <br />
+        <br />
+        <label for="estudiosPanendoscopia">Selecciona un estudio:</label>
+        <br>
+        <br>
+        <select class="w-100" name="estudios" id="estudiosPanendoscopia" required>
+          <option value="Panendoscopía">Panendoscopía</option>
+          <option value="Colonoscopía">Colonoscopía</option>
+          <!-- Otras opciones de estudios -->
+        </select>
+
+        <br />
+        <br />
+        <label style="margin-top: 5px" for="MessagePanendoscopia"
+          >Mensajesss:
+        </label>
+        <textarea
+          class="w-100"
+          placeholder="Estamos para escucharlo"
+          id="MessagePanendoscopia"
+          cols="10"
+          rows="3"
+        ></textarea>
+        <button>Enviar</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <ul class="horizontal-list">
+        <li>InnerGastro © 2023</li>
+        <li>Legal</li>
+        <li>Aviso de Privacidad</li>
+        <li>Contacto</li>
+
+        <!-- Agrega más elementos según sea necesario -->
+      </ul>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/index.js"></script>
