@@ -102,6 +102,12 @@ ul {
   margin-bottom: 7rem;
 }
 
+@media (max-width: 650px) {
+  .container-gallery h3{
+    text-align: center;
+  }
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -203,6 +209,25 @@ ul {
 
 .w-100:focus {
   border-bottom: 1px solid var(--primario);
+}
+
+.whatsApp{
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background-color: var(--primario);
+  position:  fixed;
+  z-index: 100;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsApp i{
+  font-size: 3.2rem;
+  color: var(--parrafo);
 }
 
 /* End formulario de contacto */
