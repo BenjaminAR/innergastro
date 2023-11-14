@@ -24,7 +24,7 @@ ul {
   left: 0;
   z-index: 1;
   clip-path: polygon(0 0, 100% 0, 100% 97%, 0 77%);
-  background-image: url(/images/backgrounds/PanendoscopiaOp.png);
+  background-image: url(../images/backgrounds/PanendoscopiaOp.png);
 }
 
 @media (max-width: 450px) {
