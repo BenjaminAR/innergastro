@@ -1,9 +1,13 @@
-h2 {
-  margin-top: 0;
-}
-
 p {
   font-weight: 200;
+  color: rgb(100, 100, 100);
+}
+h3{
+    color: rgb(100, 100, 100);
+}
+
+ul{
+    color: rgb(100, 100, 100);
 }
 
 .fondo-parallax {
@@ -18,22 +22,6 @@ p {
   background-image: url(/images/backgrounds/PanendoscopiaOp.png);
 }
 
-.fondo-parallax::after {
-  content: "";
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(244, 244, 244, 0.20211834733893552) 65%,
-    rgba(65, 183, 183, 0.6671043417366946) 100%
-  );
-  z-index: 2;
-}
 
 .space-fondo-parallax {
   height: 20vh;
@@ -45,7 +33,7 @@ p {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--primario);
   z-index: 3;
   opacity: 1;
   transition: opacity 0.5s ease;
@@ -56,12 +44,42 @@ p {
   flex-direction: column;
   display: flex;
   justify-content: center;
-  background-color: var(--blanco);
+  background-color: #EEEEEE;
   z-index: 3;
-  width: 100%;
+  max-width: 100%;
+  padding: 1rem 20%;
 }
 
 .contenido-servicios-first {
-  margin-top: -15rem;
+  margin-top: -15rem !important;
   clip-path: polygon(0 19%, 100% 2%, 100% 100%, 0% 100%);
+}
+
+.contenido-servicios h3{
+    font-size: 1.8rem;
+    margin-bottom: .2rem;
+    margin-top: .6rem;
+}
+
+.contenido-servicios p{
+    line-height: 1.4rem;
+}
+
+@media (max-width: 550px) {
+    .contenido-servicios-first-h2{
+        margin-top: 1rem;
+        max-width: 100%;
+    }
+    .contenido-servicios {
+        max-width: 100%;
+        padding: 1rem ;
+      }
+}
+
+.contenido-servicios ul {
+    font-weight: 200;
+}
+
+.contenido-servicios ul li {
+    margin: .4rem 0;
 }
