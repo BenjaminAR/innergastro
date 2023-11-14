@@ -2,12 +2,6 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-body {
-  font-family: "mundial", sans-serif;
-}
-
-
-
 /* ********************** HERO ******************* */
 .hero {
   position: relative;

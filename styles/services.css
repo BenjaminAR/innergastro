@@ -1,0 +1,67 @@
+h2 {
+  margin-top: 0;
+}
+
+p {
+  font-weight: 200;
+}
+
+.fondo-parallax {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url(/images/backgrounds/PanendoscopiaOp.png);
+}
+
+.fondo-parallax::after {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(244, 244, 244, 0.20211834733893552) 65%,
+    rgba(65, 183, 183, 0.6671043417366946) 100%
+  );
+  z-index: 2;
+}
+
+.space-fondo-parallax {
+  height: 20vh;
+}
+
+.contenido-parallax-titulo {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.contenido-servicios {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  background-color: var(--blanco);
+  z-index: 3;
+  width: 100%;
+}
+
+.contenido-servicios-first {
+  margin-top: -15rem;
+  clip-path: polygon(0 19%, 100% 2%, 100% 100%, 0% 100%);
+}
