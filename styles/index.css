@@ -285,7 +285,7 @@ html {
   .services-two {
     width: 18rem;
     height: 24rem;
-    padding: 0.5rem 1rem;
+    padding: 1.4rem 1rem;
   }
 
   .services-slider img {
@@ -294,3 +294,22 @@ html {
   }
 }
 /** END SERVICE **/
+
+.whatsApp{
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--primario);
+  position:  fixed;
+  z-index: 100;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsApp i{
+  font-size: 2.5rem;
+  color: var(--parrafo);
+}
