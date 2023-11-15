@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var titulo = document.querySelector(".contenido-parallax-titulo");
   var miDiv = document.querySelector(".menu-line");
   var miDivMenuDos = document.querySelector(".screen");
+  var subMneu = document.querySelector(".sub-menu");
 
   window.addEventListener("scroll", function () {
     var scrollPosition = window.scrollY;
@@ -39,6 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "rgb(66, 69, 69)"; /* Cambia el color de fondo a rojo */
     } else {
       miDivMenuDos.style.backgroundColor =
+        "transparent"; /* Restaura el color de fondo original a azul */
+    }
+    if (scrollPosition > +350) {
+      subMneu.style.backgroundColor =
+        "rgb(66, 69, 69)"; /* Cambia el color de fondo a rojo */
+    } else {
+      subMneu.style.backgroundColor =
         "transparent"; /* Restaura el color de fondo original a azul */
     }
   });
