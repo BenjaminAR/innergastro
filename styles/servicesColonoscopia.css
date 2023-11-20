@@ -211,24 +211,29 @@ ul {
   border-bottom: 1px solid var(--primario);
 }
 
-.whatsApp{
-  height: 4.5rem;
-  width: 4.5rem;
+.whatsApp {
+  height: 3.5rem;
+  width: 3.5rem;
   border-radius: 50%;
   background-color: var(--primario);
-  position:  fixed;
+  position: fixed;
   z-index: 100;
   bottom: 1rem;
   right: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: -3px 4px 4px 6px rgba(41, 47, 50, 0.78);
+  -webkit-box-shadow: -3px 4px 6px 0px rgba(41, 47, 50, 0.78);
+  -moz-box-shadow: -3px 4px 6px 0px rgba(41, 47, 50, 0.78);
+
 }
 
-.whatsApp i{
-  font-size: 3.2rem;
+.whatsApp i {
+  font-size: 2.5rem;
   color: var(--parrafo);
 }
+
 
 /* End formulario de contacto */
 
