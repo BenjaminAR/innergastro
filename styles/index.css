@@ -39,7 +39,7 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0);
-  opacity: 47%;
+  opacity: 40%;
   z-index: 1;
   /* Coloca el pseudo-elemento encima de la imagen de fondo */
 }
@@ -51,29 +51,31 @@ html {
 }
 
 .hero-title__h1 {
-  font-weight: 200;
+  font-weight: 100;
   text-align: center;
-  color: var(--blanco);
+  color: var(--secundario);
   animation: fadeIn;
   animation-duration: 1s;
 }
 
 .hero-title__h1 span {
-  color: var(--primario);
+
   font-size: 4.1rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @media (max-width: 500px) {
   .hero-title__h1 {
     margin-top: -2rem;
   }
+
   .hero-title__h1 span {
     color: var(--primario);
     font-size: 3.7rem;
-    font-weight: 400;
+    font-weight: 300;
   }
 }
+
 /* ------------- END TITLE ------------ */
 
 /* ------------- BUTTONS ------------ */
@@ -95,6 +97,7 @@ html {
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: var(--backObsTrans);
+  transition: box-shadow .2s ease;
 }
 
 .hero-btn__first {
@@ -105,6 +108,14 @@ html {
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: var(--backClaTrans);
+  transition: box-shadow .2s ease;
+}
+
+.hero-btn__first:hover,
+.hero-btn__second:hover {
+  box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
+  -moz-box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
 }
 
 @media (max-width: 719px) {
@@ -156,8 +167,10 @@ html {
 
 .services-title h2 {
   text-align: center;
-  color: var(--primario);
+  color: var(--secundario);
+  margin-bottom: 6rem;
 }
+
 .services-slider {
   display: flex;
   justify-content: center;
@@ -177,14 +190,14 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 22rem;
+  width: 18rem;
   height: 24rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 5px;
-  background-color: var(--backClaTrans);
-  box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
-  -webkit-box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
-  -moz-box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
+  background-color: var(--backObsTrans);
+  -webkit-box-shadow: -1px 1px 14px 1px rgba(8, 8, 8, 0.8);
+  -moz-box-shadow: -1px 1px 14px 1px rgba(8, 8, 8, 0.8);
+  box-shadow: -1px 1px 14px 1px rgba(8, 8, 8, 0.8);
 }
 
 .services-one div,
@@ -197,7 +210,7 @@ html {
 
 .services-one h3,
 .services-two h3 {
-  color: var(--backObscuro);
+  color: var(--secundario);
   margin: 0;
   margin-bottom: 1rem;
   text-align: center;
@@ -210,11 +223,12 @@ html {
 .services-one p,
 .services-two p {
   text-align: justify;
-  font-size: 1rem;
-  font-weight: 200;
   margin: 1rem 2rem;
   margin-top: 1.5rem;
-  word-spacing: 5px;
+  color: var(--secundario);
+  font-weight: 200;
+  font-size: 2.7rem;
+  margin-top: 5px;
 }
 
 .services-a__btn {
@@ -273,12 +287,14 @@ html {
   .btn-slider button {
     display: inline-block;
   }
+
   .services-two {
     display: none;
   }
 }
 
 @media (max-width: 508px) {
+
   .services-one,
   .services-two {
     width: 18rem;
@@ -291,6 +307,7 @@ html {
     margin-top: -4rem;
   }
 }
+
 /** END SERVICE **/
 
 .whatsApp {
@@ -306,10 +323,10 @@ html {
   justify-content: center;
   align-items: center;
 
-  transition: box-shadow .2s ease ;
+  transition: box-shadow .2s ease;
 }
 
-.whatsApp:hover{
+.whatsApp:hover {
   box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
   -webkit-box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
   -moz-box-shadow: 0px 4px 7px 0px rgba(41, 47, 50, 0.78);
