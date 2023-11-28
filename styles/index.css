@@ -91,12 +91,12 @@ html {
 
 .hero-btn__second {
   text-decoration: none;
-  color: var(--blanco);
+  color: #333;
   font-weight: 600;
   padding: 0.7rem 8rem;
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: var(--backObsTrans);
+  background-color: var(--primario);
   transition: box-shadow .2s ease;
 }
 
@@ -107,7 +107,7 @@ html {
   padding: 0.7rem 8rem;
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: var(--backClaTrans);
+  background-color: var(--primario);
   transition: box-shadow .2s ease;
 }
 

@@ -1,5 +1,5 @@
 :root {
-  --primario: #41b7b7;
+  --primario: #D8D8D7;
   --secundario: #D8D8D7;
   --blanco: #f4f4f4;
   --negro: #000;
@@ -9,6 +9,11 @@
   --backObsTrans: rgba(34, 34, 34, 0.8);
   --backClaTrans: rgba(255, 255, 255, 0.751);
 }
+
+/* 
+ --primario: #41b7b7;
+ */
+
 
 html {
   box-sizing: border-box;
